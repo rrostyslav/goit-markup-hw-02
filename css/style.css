@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .tp-header-1 {
+    @apply font-bold text-[56px] leading-[60px];
+  }
+
+  .tp-header-2 {
+    @apply font-bold text-[36px];
+  }
+
+  .tp-header-3 {
+    @apply font-medium text-[20px];
+  }
+
+  .tp-body {
+    @apply text-[16px] leading-[24px];
+  }
+
+  .tp-small {
+    @apply text-[12px] leading-[14px];
+  }
+
+  .tp-medium {
+    @apply font-medium text-[16px] leading-[24px];
+  }
+
+  .tp-button-text {
+    @apply font-medium text-[16px] leading-[24px];
+  }
+
+  .tp-link {
+    @apply text-[12px] leading-[16px] underline;
+  }
+}
