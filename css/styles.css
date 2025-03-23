@@ -99,8 +99,8 @@ nav {
   color: #434455;
 }
 
-.email:hover,
-.email:focus {
+.contact-item:hover,
+.contact-item:focus {
   color: #404bbf;
 }
 
