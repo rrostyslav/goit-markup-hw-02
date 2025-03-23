@@ -1,3 +1,7 @@
+:root {
+  --color-cloud: #f4f4fd;
+}
+
 .container {
   max-width: 1128px;
   margin: 0 auto;
@@ -10,7 +14,9 @@
 body {
   display: flex;
   flex-direction: column;
-  font-family: Raleway;
+  font-family: "Roboto", sans-serif;
+  color: #434455;
+  background-color: #ffffff;
 }
 
 h2 {
@@ -34,13 +40,14 @@ header {
 }
 
 .logo {
+  font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   color: #4d5ae5;
   font-weight: 700;
   font-size: 18px;
-  line-height: 21px;
   letter-spacing: 0.03em;
   vertical-align: center;
+  line-height: 1.17;
 }
 
 .logo > span {
@@ -52,7 +59,7 @@ header {
   column-gap: 40px;
 }
 
-.main-menu > li > a {
+.nav-link {
   font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
@@ -61,9 +68,21 @@ header {
   color: #2e2f42;
 }
 
+.nav-link:hover {
+  color: #404bbf;
+}
+
+.nav-link:focus {
+  color: #404bbf;
+}
+
 nav {
   display: flex;
   column-gap: 76px;
+}
+
+.address {
+  font-style: normal;
 }
 
 .contacts {
@@ -78,6 +97,11 @@ nav {
   line-height: 24px;
   letter-spacing: 0.02em;
   color: #434455;
+}
+
+.email:hover,
+.email:focus {
+  color: #404bbf;
 }
 
 /* block end - header */
@@ -98,11 +122,11 @@ section.hero {
   align-items: center;
 }
 
-section.hero > h1 {
+.slogan {
   font-family: Roboto;
   font-weight: 700;
   font-size: 56px;
-  line-height: 60px;
+  line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
   color: #ffffff;
@@ -113,7 +137,7 @@ section.hero > h1 {
   background-color: #4d5ae5;
   border-radius: 4px;
   padding: 16px 32px;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -121,6 +145,11 @@ section.hero > h1 {
   vertical-align: middle;
   color: #ffffff;
   outline: none;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #404bbf;
 }
 
 /* block end - hero */
@@ -146,7 +175,7 @@ section.hero > h1 {
   row-gap: 8px;
 }
 
-.about-us-points > li > h3 {
+.point-title {
   font-family: Roboto;
   font-weight: 500;
   font-size: 20px;
@@ -155,7 +184,7 @@ section.hero > h1 {
   color: #2e2f42;
 }
 
-.about-us-points > li > p {
+.point-description {
   font-family: Roboto;
   font-weight: 400;
   font-size: 16px;
@@ -178,12 +207,17 @@ section.hero > h1 {
   row-gap: 72px;
 }
 
+.our-team-title {
+  line-height: 1.11;
+  text-transform: capitalize;
+}
+
 .our-team-team-members {
   display: flex;
   column-gap: 24px;
 }
 
-.our-team-team-members > li {
+.team-member-item {
   width: 264px;
   height: 380px;
   border-bottom-left-radius: 4px;
@@ -194,26 +228,27 @@ section.hero > h1 {
   flex-direction: column;
   padding-bottom: 32px;
   align-items: center;
+  background-color: #ffffff;
 }
 
-.our-team-team-members > li > h3 {
+.team-member-name {
   margin-top: 32px;
   font-family: Roboto;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
 }
 
-.our-team-team-members > li > p {
+.team-member-role {
   margin-top: 8px;
   font-family: Roboto;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
 }
@@ -222,14 +257,16 @@ section.hero > h1 {
 
 /* block start - our portfolio */
 
-section.our-portfolio {
-  height: 1240px;
-  display: flex;
-  align-items: center;
-  padding: 120px 0;
+.our-portfolio-title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-transform: capitalize;
 }
 
 section.our-portfolio {
+  height: 1240px;
+  align-items: center;
+  padding: 120px 0;
   display: flex;
   flex-direction: column;
   row-gap: 72px;
@@ -248,7 +285,7 @@ section.our-portfolio {
   padding-bottom: 32px;
 }
 
-.our-portfolio-list > li > h3 {
+.portfolio-item-title {
   margin-top: 32px;
   font-family: Roboto;
   font-weight: 500;
@@ -258,7 +295,7 @@ section.our-portfolio {
   color: #2e2f42;
 }
 
-.our-portfolio-list > li > p {
+.portfolio-item-role {
   margin-top: 8px;
   font-family: Roboto;
   font-weight: 400;
@@ -287,23 +324,24 @@ footer {
   font-family: Raleway;
   font-weight: 700;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   vertical-align: middle;
   text-transform: uppercase;
   color: #4d5ae5;
+  font-family: "Raleway", sans-serif;
 }
 
-.footer-logo > span {
+.footer-logo > .highlight {
   color: #f4f4fd;
 }
 
-footer > p {
+.footer-slogan {
   width: 264px;
   font-family: Roboto;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
-  color: #e7e9fc;
+  color: var(--color-cloud);
 }
