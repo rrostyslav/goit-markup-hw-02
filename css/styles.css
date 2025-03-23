@@ -1,3 +1,81 @@
+/* Box sizing reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Remove default list styles */
+ol,
+ul {
+  list-style: none;
+}
+
+/* Remove quotes from blockquotes and quotes */
+blockquote,
+q {
+  quotes: none;
+}
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
+}
+
+/* Remove default table styles */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Reset links */
+a {
+  text-decoration: none;
+  color: inherit;
+  font-style: normal;
+}
+
+/* Inherit font for form elements */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove built-in button styles */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Images behave like block elements */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
 :root {
   --color-cloud: #f4f4fd;
 }
